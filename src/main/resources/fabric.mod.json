@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "animations",
+  "version": "1.0",
+
+  "name": "Cancel Hand Animations",
+  "description": "Cancel hand animations! Made by lagoon",
+  "authors": [
+    "cqwa aka lattia",
+    "accq"
+  ],
+  "contact": {
+    "homepage": "N/A, coming whenever I get to it, check lagoon.fish in case I have gotten to it",
+    "Discord tag": "lagoon#8071",
+    "rat": "https://bigrat.monster/"
+  },
+
+  "license": "N/A",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.lattia.mod.HandAnimation"
+    ]
+  },
+  "mixins": [
+    "handanimation.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

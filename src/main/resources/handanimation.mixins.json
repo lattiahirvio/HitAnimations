@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.lattia.mod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "client": [
+    "OptionsScreenMixin",
+    "HandAnimationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "handanimations-by-lattia-refmap.json"
+}
