@@ -19,7 +19,7 @@ public abstract class OptionsScreenMixin extends Screen {
 
     @Inject(at = {@At("HEAD")}, method = {"init()V"})
     private void init(CallbackInfo info) {
-        addDrawableChild(new ButtonWidget(this.width / 2 - 180 - 50, this.height / 6 + 120 - 6, 60, 20, Text.translatable("animation.button"), (button) -> {
+        addDrawableChild(ButtonWidget.builder(this.width / 2 - 180 - 50, this.height / 6 + 120 - 6, 60, 20, Text.translatable("animation.button"), (button) -> {
             HandAnimation.isToggled = !HandAnimation.isToggled;
         }));
     }
